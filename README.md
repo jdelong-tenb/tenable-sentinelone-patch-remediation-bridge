@@ -19,6 +19,10 @@ and orchestrates against whichever MCP server on the session actually exposes th
 
 This is a community-built skill, not official guidance from Tenable or SentinelOne. **The patch step never patches anything itself** — it only calls a tool some other, already-configured MCP server exposes.
 
+## Community & Support
+
+This repository is a community-driven, open source project designed to streamline the deployment and use of SentinelOne and Tenable integrations. While not a formal SentinelOne product, this repository is maintained in partnership with SentinelOne and supported by the open source developer community.
+
 ## Prerequisites
 
 - Claude Code (or another skill-compatible client) with an MCP server connected that implements the two-tool contract above for your patch management tool. **No such server is bundled with this skill** — you (or your TPM vendor) need one that exposes `trigger_patch_job`/`get_patch_job_status` matching the shapes in [SKILL.md](SKILL.md#the-contract-patch-step).
